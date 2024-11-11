@@ -1,81 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Portfolio</title>
-  <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Achouri Ilhem</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Portfolio d'Achouri Ilhem, développeur web, designer 3D et passionné de technologie.">
+    <meta name="keywords" content="portfolio, développement web, 3D, design, projets, Achouri Ilhem">
 </head>
 <body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <h1 class="nom">Achouri Ilhem</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Header Section -->
-  <header>
-    <div class="container">
-      <h1>Achouri Ilhem</h1>
-      <p>Your Job Title (e.g., Web Developer, Software Engineer, etc.)</p>
-    </div>
-  </header>
+    <!-- SECTION INTRO (À propos) -->
+    <section id="about">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <p>Je suis développeur web et designer 3D, passionné par la technologie et l'innovation. Mon travail se concentre sur la création de sites web modernes, interactifs et visuellement attrayants, ainsi que sur le développement d'expériences 3D immersives.</p>
+        </div>
+    </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        Hello! I'm a passionate developer with a love for building websites and applications. I specialize in front-end technologies like HTML, CSS, and JavaScript. 
-        I also enjoy working on design.
-      </p>
-    </div>
-  </section>
+    <!-- SECTION PROJETS -->
+    <section id="projects">
+        <div class="container">
+            <h2>Mes Projets</h2>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>Git & GitHub</li>
-      </ul>
-    </div>
-  </section>
+            <div class="project">
+                <h3>TP1 - Module Web 3D : Table et Chaises</h3>
+                <p>Ce projet consiste à créer une scène 3D d'une table et de chaises, réalisée avec Blender.</p>
+                <img src="1729113796180_image_render.png" alt="Rendu 3D Table et Chaises" width="600">
+                <br>
+                <a href="1729113795824_table&chaire.blend" target="_blank" class="button">Voir le projet</a>
+            </div>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Project Name 1</h3>
-        <p>Brief description of the project. <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a></p>
-      </div>
-      <div class="project">
-        <h3>Project Name 2</h3>
-        <p>Brief description of the project. <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a></p>
-      </div>
-    </div>
-  </section>
+            <div class="project">
+                <h3>TP2 - Module Web 3D : Loi de Newton</h3>
+                <p>Simulation interactive basée sur la première loi de Newton, intégrée dans une expérience de physique en 3D.</p>
+                <video controls height="300" width="600">
+                    <source src="tp2.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo HTML5.
+                </video>
+                <br>
+                <a href="tp2.blend" target="_blank" class="button">Voir le projet</a>
+            </div>
+        </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>You can reach me at:</p>
-      <ul>
-        <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-        <li>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></li>
-        <li>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
-      </ul>
-    </div>
-  </section>
+    <!-- SECTION CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email : <a href="mailto:ilhemachouri79@gmail.com">ilhemachouri79@gmail.com</a></p>
+            <p>Je suis également disponible sur LinkedIn et GitHub, n'hésitez pas à me contacter pour discuter de vos projets.</p>
+        </div>
+    </section>
 
-  <!-- Footer Section -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </div>
-  </footer>
-
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Achouri Ilhem - Tous droits réservés.</p>
+        </div>
+    </footer>
 </body>
 </html>
