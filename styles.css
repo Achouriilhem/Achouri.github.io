@@ -1,147 +1,149 @@
-/* General Reset */
+/* RESET DE BASE */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f4f4f9;
     color: #333;
-  }
-  
-  .container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Header Section */
-  header {
-    background: #333;
-    color: #fff;
-    padding: 50px 0;
-    text-align: center;
-  }
-  
-  header h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-  }
-  
-  header p {
-    font-size: 1.2em;
-  }
-  
-  /* About Section */
-  #about {
-    background: #fff;
-    padding: 50px 0;
-    text-align: center;
-  }
-  
-  #about h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  #about p {
-    font-size: 1.2em;
-  }
-  
-  /* Skills Section */
-  #skills {
-    background: #f4f4f4;
-    padding: 50px 0;
-  }
-  
-  #skills h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  #skills ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  #skills li {
-    background: #fff;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
-    font-size: 1.2em;
-  }
-  
-  /* Projects Section */
-  #projects {
-    background: #fff;
-    padding: 50px 0;
-  }
-  
-  #projects h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  .project {
-    margin-bottom: 30px;
-  }
-  
-  .project h3 {
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  
-  .project p {
-    font-size: 1.2em;
-  }
-  
-  /* Contact Section */
-  #contact {
-    background: #f4f4f4;
-    padding: 50px 0;
-    text-align: center;
-  }
-  
-  #contact h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  #contact ul {
-    list-style-type: none;
-  }
-  
-  #contact li {
-    font-size: 1.2em;
-    margin: 10px 0;
-  }
-  
-  #contact a {
-    color: #333;
+}
+
+a {
     text-decoration: none;
-  }
-  
-  #contact a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Footer Section */
-  footer {
-    background: #333;
-    color: #fff;
+    color: #3498db;
+}
+
+a:hover {
+    color: #2c3e50;
+}
+
+/* CONTAINER */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    background: #34495e;
+    color: white;
     padding: 20px 0;
     text-align: center;
-  }
-  
-  footer p {
-    font-size: 1em;
-  }
-  
+}
+
+header .nom {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* SECTION À PROPOS */
+#about {
+    background-color: #ecf0f1;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* SECTION PROJETS */
+#projects {
+    padding: 40px 0;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.project {
+    background: white;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.project img,
+.project video {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.project .button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.project .button:hover {
+    background-color: #2980b9;
+}
+
+/* SECTION CONTACT */
+#contact {
+    background: #ecf0f1;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
