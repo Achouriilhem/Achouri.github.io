@@ -1,76 +1,86 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio - Achouri Ilhem</title>
-    <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Portfolio d'Achouri Ilhem, développeur web, designer 3D et passionné de technologie.">
-    <meta name="keywords" content="portfolio, développement web, 3D, design, projets, Achouri Ilhem">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACHOURI ILHEM - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script> <!-- Animation Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1200, // duration of the animation
+      easing: 'ease-in-out', // easing function
+      once: true // animation happens only once when scrolled into view
+    });
+  </script>
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-        <div class="container">
-            <h1 class="nom">Achouri Ilhem</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#projects">Projets</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+  <!-- Main Container -->
+  <div class="container">
+    <header data-aos="fade-down">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- SECTION INTRO (À propos) -->
+    <!-- Home Section -->
+    <section id="home">
+      <div class="home-content" data-aos="fade-up">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm ACHOURI ILHEM, a passionate web developer.</p>
+        <!-- Replace the "Contact Me" button with the email link -->
+        <a href="mailto:ilhemachouri79@gmail.com" class="btn" data-aos="zoom-in">Contact Me</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
     <section id="about">
-        <div class="container">
-            <h2>À propos de moi</h2>
-            <p>Je suis développeur web et designer 3D, passionné par la technologie et l'innovation. Mon travail se concentre sur la création de sites web modernes, interactifs et visuellement attrayants, ainsi que sur le développement d'expériences 3D immersives.</p>
-        </div>
+      <div class="about-content" data-aos="fade-left">
+        <h2>About Me</h2>
+        <p>I specialize in frontend and backend development. With a love for clean code and innovative design, I bring ideas to life through technology.</p>
+      </div>
     </section>
 
-    <!-- SECTION PROJETS -->
+    <!-- Projects Section -->
     <section id="projects">
-        <div class="container">
-            <h2>Mes Projets</h2>
-
-            <div class="project">
-                <h3>TP1 - Module Web 3D : Table et Chaises</h3>
-                <p>Ce projet consiste à créer une scène 3D d'une table et de chaises, réalisée avec Blender.</p>
-                <img src="1729113796180_image_render.png" alt="Rendu 3D Table et Chaises" width="600">
-                <br>
-                <a href="1729113795824_table&chaire.blend" target="_blank" class="button">Voir le projet</a>
-            </div>
-
-            <div class="project">
-                <h3>TP2 - Module Web 3D : Loi de Newton</h3>
-                <p>Simulation interactive basée sur la première loi de Newton, intégrée dans une expérience de physique en 3D.</p>
-                <video controls height="300" width="600">
-                    <source src="tp2.mp4" type="video/mp4">
-                    Votre navigateur ne supporte pas la vidéo HTML5.
-                </video>
-                <br>
-                <a href="tp2.blend" target="_blank" class="button">Voir le projet</a>
-            </div>
+      <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+      <div class="project-cards">
+            <div class="card" data-aos="flip-left">
+                <h3><a href="C:\Users\Elite\Desktop\tp1.blend.blend" target="_blank">TP 1</a></h3>
+                <p>Description of the first project. <a href="C:\Users\Elite\Desktop\tp1.blend.blend" target="_blank">Click here</a> to view the project.</p>
+              </div>
+              
         </div>
+        <div class="card" data-aos="flip-left">
+          <h3>TP 2</h3>
+          <p>La physique des corps rigides dans Blender permet de simuler des interactions réalistes entre objets solides, tels que les collisions et les mouvements sous l'effet de forces. Elle est utilisée pour créer des animations dynamiques et des simulations dans des projets 3D, comme des films ou des jeux vidéo.</p>
+        </div>
+        <div class="card" data-aos="flip-left">
+          <h3>TP 3</h3>
+          <p>Description of the third project.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- SECTION CONTACT -->
+    <!-- Contact Section -->
     <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email : <a href="mailto:ilhemachouri79@gmail.com">ilhemachouri79@gmail.com</a></p>
-            <p>Je suis également disponible sur LinkedIn et GitHub, n'hésitez pas à me contacter pour discuter de vos projets.</p>
-        </div>
+      <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+      <!-- Replace the form with email link -->
+      <p>If you'd like to get in touch with me, feel free to email me at <a href="mailto:ilhemachouri79@gmail.com" data-aos="fade-up">ilhemachouri79@gmail.com</a></p>
     </section>
+  </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Achouri Ilhem - Tous droits réservés.</p>
-        </div>
-    </footer>
+  <footer data-aos="fade-up">
+    <p>© 2024 ACHOURI ILHEM | All Rights Reserved</p>
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
