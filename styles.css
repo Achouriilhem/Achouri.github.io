@@ -1,149 +1,138 @@
-/* RESET DE BASE */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f9;
-    color: #333;
-}
-
-a {
-    text-decoration: none;
-    color: #3498db;
-}
-
-a:hover {
-    color: #2c3e50;
-}
-
-/* CONTAINER */
-.container {
-    width: 80%;
+    background-color: #2b1d3f;
+    color: #fff;
+  }
+  
+  h1, h2, h3, p {
+    margin: 15px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
     margin: 0 auto;
-}
-
-/* HEADER */
-header {
-    background: #34495e;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header .nom {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    color: white;
-    font-size: 1.1rem;
-}
-
-/* SECTION À PROPOS */
-#about {
-    background-color: #ecf0f1;
-    padding: 40px 0;
-    text-align: center;
-}
-
-#about h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#about p {
-    font-size: 1.2rem;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* SECTION PROJETS */
-#projects {
-    padding: 40px 0;
-}
-
-#projects h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 40px;
-}
-
-.project {
-    background: white;
-    margin-bottom: 30px;
     padding: 20px;
+  }
+  
+  header {
+    background-color: #3e2a5d;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  #home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3e2a5d;
+    text-align: center;
+  }
+  
+  #home .home-content h1 {
+    font-size: 3rem;
+  }
+  
+  #home .home-content p {
+    font-size: 1.2rem;
+  }
+  
+  .btn {
+    background-color: #7a4d91;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #9a6db8;
+  }
+  
+  #about {
+    padding: 60px 20px;
+    background-color: #3e2a5d;
+    text-align: center;
+  }
+  
+  #projects {
+    padding: 60px 20px;
+    background-color: #5c2a7e;
+  }
+  
+  .project-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #4e1f6f;
+    padding: 30px;
+    margin: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.project h3 {
-    font-size: 1.6rem;
-    margin-bottom: 10px;
-}
-
-.project p {
-    font-size: 1rem;
-    margin-bottom: 10px;
-}
-
-.project img,
-.project video {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-.project .button {
-    display: inline-block;
-    background-color: #3498db;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  #contact {
+    padding: 60px 20px;
+    background-color: #3e2a5d;
+  }
+  
+  #contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #5c2a7e;
+    color: white;
+  }
+  
+  #contact button {
+    background-color: #7a4d91;
     color: white;
     padding: 10px 20px;
-    margin-top: 10px;
+    border: none;
     border-radius: 5px;
-}
-
-.project .button:hover {
-    background-color: #2980b9;
-}
-
-/* SECTION CONTACT */
-#contact {
-    background: #ecf0f1;
-    padding: 40px 0;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #3e2a5d;
     text-align: center;
-}
-
-#contact h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#contact p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-}
-
-/* FOOTER */
-footer {
-    background-color: #34495e;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
+    padding: 20px;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+  
